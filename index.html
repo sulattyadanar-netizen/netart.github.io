@@ -8,15 +8,17 @@
 
   <style>
     body {
-      background-image: url('everafterhigh1.png): no-repeat;
+      background-image: url('everafterhigh1.png');
       background-position: center center;
       background-size: cover;
       font-family: 'Mystery Quest', cursive;
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     .content {
@@ -25,6 +27,8 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 900px;
+      width: 100%;
     }
 
     h1 {
@@ -41,6 +45,58 @@
       padding: 15px 25px;
       border-radius: 8px;
       font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Container for each image + caption */
+    .image-container {
+      width: 28%;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .clickable-image {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      object-fit: cover;
+      height: 180px;
+      margin-bottom: 8px;
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .image-container {
+        width: 45%;
+      }
+      .clickable-image {
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .image-container {
+        width: 90%;
+      }
+      .clickable-image {
+        height: auto;
+      }
     }
   </style>
 </head>
@@ -49,6 +105,29 @@
 <div class="content">
   <h1>Welcome to Wonderland Cafe!</h1>
   <p>What would you like to purchase today?</p>
+
+  <div class="image-row">
+    <div class="image-container">
+      <a href="menu.html">
+        <img src="charm blossom.jpg" alt="Charm Blossom" class="clickable-image">
+      </a>
+      <div>Menu</div>
+    </div>
+
+    <div class="image-container">
+      <a href="about.html">
+        <img src="green tea fudge.jpg" alt="Green Tea Fudge" class="clickable-image">
+      </a>
+      <div>About Us</div>
+    </div>
+
+    <div class="image-container">
+      <a href="contact.html">
+        <img src="sugarplum biscuits served with fairyberry jam.jpg" alt="Surgarplum biscuits with fairyberry jam" class="clickable-image">
+      </a>
+      <div>Contact</div>
+    </div>
+  </div>
 </div>
 
 </body>
