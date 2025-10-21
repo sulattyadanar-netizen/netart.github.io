@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>green tea fudge - Wonderland Cafe</title>
+  <title>Green Tea Fudge - Wonderland Cafe</title>
   <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
   <style>
     body {
@@ -17,6 +17,7 @@
       padding: 20px;
       box-sizing: border-box;
     }
+
     .content {
       text-align: center;
       background-color: rgba(255, 255, 255, 0.85);
@@ -26,6 +27,7 @@
       max-width: 900px;
       width: 100%;
     }
+
     h1 {
       background-color: AliceBlue;
       color: #333;
@@ -33,6 +35,7 @@
       border-radius: 10px;
       margin: 0 0 20px 0;
     }
+
     p {
       background-color: AntiqueWhite;
       color: #333;
@@ -41,6 +44,16 @@
       font-size: 18px;
       margin-bottom: 30px;
     }
+
+    .product-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+
     .clickable-image {
       width: 100%;
       cursor: pointer;
@@ -51,9 +64,11 @@
       height: 180px;
       margin-bottom: 8px;
     }
+
     .clickable-image:hover {
       transform: scale(1.05);
     }
+
     .image-row {
       display: flex;
       justify-content: center;
@@ -62,6 +77,7 @@
       margin-top: 30px;
       margin-bottom: 20px;
     }
+
     .image-container {
       width: 40%;
       text-align: center;
@@ -70,7 +86,7 @@
       font-weight: bold;
       cursor: pointer;
     }
-    a.back-link,
+
     a.no-thank-you {
       display: inline-block;
       margin-top: 20px;
@@ -82,10 +98,11 @@
       font-weight: bold;
       transition: background-color 0.3s;
     }
-    a.back-link:hover,
+
     a.no-thank-you:hover {
       background-color: #c0aaff;
     }
+
     @media (max-width: 700px) {
       .image-container {
         width: 80%;
@@ -97,13 +114,14 @@
   </style>
 </head>
 <body>
-  <div class="image-container">
-    <h1>green tea fudge</h1>
+  <div class="content">
+    <h1>Green Tea Fudge</h1>
 
+    <!-- Not clickable main image -->
     <img src="green tea fudge.jpg" alt="Green Tea Fudge" class="product-image">
 
     <p>
-      Our <strong>Green Tea Fudge</strong> is a sweet treat infused with matcha - rich, creamy, and slightly enchanted.
+      Our <strong>Green Tea Fudge</strong> is a sweet treat infused with matcha — rich, creamy, and slightly enchanted.
     </p>
 
     <div class="image-row">
@@ -126,3 +144,4 @@
   </div>
 </body>
 </html>
+
