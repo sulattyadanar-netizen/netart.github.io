@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>right - Wonderland Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('cashier maddie.png');
+      background-position: center center;
+      background-size: cover;
+      font-family: 'Mystery Quest', cursive;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .content {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 900px;
+      width: 100%;
+    }
+
+    h1 {
+      background-color: AliceBlue;
+      color: #333;
+      padding: 20px 30px;
+      border-radius: 10px;
+      margin: 0 0 20px 0;
+    }
+
+    p {
+      background-color: AntiqueWhite;
+      color: #333;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .product-image {
+      width: 300px;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    a.button {
+      text-decoration: none;
+      background-color: #dcd0ff;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+      width: 100px;
+      text-align: center;
+    }
+
+    a.button:hover {
+      background-color: #c0aaff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .button-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Thank you for your patronage!</h1>
+    <p>Here's your receipt. Come back soon!</p>
+
+    <img src="receipt.jpg" alt="receipt" class="product-image">
+
+    <div class="button-group">
+      <a class="button" href="index.html">Shop again!</a>
+    </div>
+  </div>
+</body>
+</html>
