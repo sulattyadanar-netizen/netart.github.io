@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add a Hat - Wonderland Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('cashier maddie.png');
+      background-position: center center;
+      background-size: cover;
+      font-family: 'Mystery Quest', cursive;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .content {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 900px;
+      width: 100%;
+    }
+
+    h1 {
+      background-color: AliceBlue;
+      color: #333;
+      padding: 20px 30px;
+      border-radius: 10px;
+      margin: 0 0 20px 0;
+    }
+
+    p {
+      background-color: AntiqueWhite;
+      color: #333;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      width: 40%;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .clickable-image {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      object-fit: cover;
+      height: 180px;
+      margin-bottom: 8px;
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.05);
+    }
+
+    a.no-thank-you {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: #dcd0ff;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    a.no-thank-you:hover {
+      background-color: #c0aaff;
+    }
+
+    @media (max-width: 700px) {
+      .image-container {
+        width: 80%;
+      }
+
+      .clickable-image {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Sounds great!</h1>
+    <p>Would you like to add a hat to your purchase before checking out?</p>
+
+    <div class="image-row">
+      <div class="image-container">
+        <a href="add-this-hat.html">
+          <img src="gothhat.jpg" alt="Add this Hat" class="clickable-image">
+        </a>
+        <div>Add This Hat</div>
+      </div>
+
+      <div class="image-container">
+        <a href="add-that-hat.html">
+          <img src="piratehat.jpg" alt="Add that Hat" class="clickable-image">
+        </a>
+        <div>Add That Hat</div>
+      </div>
+    </div>
+
+    <a class="no-thank-you" href="checkout.html">No thank you</a>
+  </div>
+</body>
+</html>
