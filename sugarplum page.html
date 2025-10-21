@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sugarplum Biscuits - Wonderland Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('inside cafe.png');
+      background-position: center center;
+      background-size: cover;
+      font-family: 'Mystery Quest', cursive;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .content {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 900px;
+      width: 100%;
+    }
+    h1 {
+      background-color: AliceBlue;
+      color: #333;
+      padding: 20px 30px;
+      border-radius: 10px;
+      margin: 0 0 20px 0;
+    }
+    p {
+      background-color: AntiqueWhite;
+      color: #333;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .clickable-image {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      object-fit: cover;
+      height: 180px;
+      margin-bottom: 8px;
+    }
+    .clickable-image:hover {
+      transform: scale(1.05);
+    }
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .image-container {
+      width: 40%;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a.back-link,
+    a.no-thank-you {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: #dcd0ff;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    a.back-link:hover,
+    a.no-thank-you:hover {
+      background-color: #c0aaff;
+    }
+    @media (max-width: 700px) {
+      .image-container {
+        width: 80%;
+      }
+      .clickable-image {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Sugarplum Biscuits</h1>
+
+    <img src="sugarplum-biscuits.jpg" alt="Sugarplum Biscuits" class="clickable-image" style="height: auto;">
+
+    <p>
+      Our <strong>Sugarplum Biscuits</strong> are fairy-approved! Soft, buttery treats served with a swirl of Fairyberry Jam and a dusting of powdered magic.
+    </p>
+
+    <div class="image-row">
+      <div class="image-container">
+        <a href="add-honey-drizzle.html">
+          <img src="honey.jpg" alt="Add Honey Drizzle" class="clickable-image">
+        </a>
+        <div>Add Honey Drizzle</div>
+      </div>
+
+      <div class="image-container">
+        <a href="add-stardust.html">
+          <img src="stardustsugar.jpg" alt="Add Stardust Sugar" class="clickable-image">
+        </a>
+        <div>Add Stardust Sugar</div>
+      </div>
+    </div>
+
+    <a class="no-thank-you" href="index.html">No thank you</a>
+  </div>
+</body>
+</html>
+
