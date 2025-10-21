@@ -8,7 +8,7 @@
 
   <style>
     body {
-      background-image: url('everafterhigh1.png');
+      background-image: url('inside cafe.png');
       background-position: center center;
       background-size: cover;
       font-family: 'Mystery Quest', cursive;
@@ -75,7 +75,7 @@
 </head>
 <body>
 
-<div class="content">
+<div class="charm blossom page">
   <h1>Charm Blossom</h1>
 
   <img src="charm-blossom.jpg" alt="Charm Blossom">
